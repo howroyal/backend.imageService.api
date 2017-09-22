@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.taobao.backend.imageService.api.dao.FolderInfoDao">
+	
+	<resultMap type="FolderInfo" id="FolderInfoResult">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="userId" column="user_id" />
+		<result property="isDelete" column="is_Delete" />
+		<result property="createTime" column="create_Time" />
+		<result property="updateTime" column="update_Time" />
+	</resultMap>
+	
+	<insert id="insert" parameterType="FolderInfo">
+		insert into folder  SET name = #{name},user_Id = #{userId},is_Delete = #{isDelete}
+	</insert>
+	
+	<select id="findById" parameterType="Long" resultMap="FolderInfoResult">
+		select * from folder where id=#{id}
+	</select>
+	
+	<select id = "queryInfos" parameterType="FolderInfoQuery" resultMap="FolderInfoResult" useCache="true">
+		select * from folder limit #{start},#{pageSize}
+	</select>
+	
+	<select id = "queryCount" parameterType="FolderInfoQuery" resultType="Long" useCache="true">
+		select count(*) from folder
+	</select>
+
+</mapper>

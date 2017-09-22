@@ -11,7 +11,7 @@
 					<div class="panel-body">
 						<div class="col-lg-9">
 							<!--<button type="button" class="btn btn-link">返回上一级</button>-->
-							<button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新建图册</button>
+							<button id="add" type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新建图册</button>
 							<button type="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;删除图册</button>
 							<!--<button type="button" class="btn btn-success btn-sm">上传图片</button>-->
 							<!--<button type="button" class="btn btn-warning btn-sm">移动图片</button>-->
@@ -40,9 +40,9 @@
 						<div class="row">
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="140">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p style="text-align: center">店铺装修图册</p>
+										<p style="text-align: center">店铺装修</p>
 										<p>
 											<input type="checkbox" aria-label="..."> 
 											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
@@ -51,89 +51,86 @@
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="160"
-										height="150">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p>示例文件夹</p>
+										<p style="text-align: center">长袖女装图</p>
 										<p>
-											<input type="checkbox" aria-label="..."> <a href="#"
-												class="btn btn-primary " role="button">重命名</a> <a href="#"
-												class="btn btn-default" role="button">删除</a>
+											<input type="checkbox" aria-label="..."> 
+											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
+											<a href="#" class="btn btn-warning btn-sm" role="button" title="重命名"><span class="glyphicon glyphicon-edit" aria-hidden="true">重命名</a>
 										</p>
 									</div>
 								</div>
 							</div>
-
-
+							
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="170"
-										height="180">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p>示例文件夹</p>
+										<p style="text-align: center">夏季爆品女装</p>
 										<p>
-											<input type="checkbox" aria-label="..."> <a href="#"
-												class="btn btn-primary" role="button">重命名</a> <a href="#"
-												class="btn btn-default" role="button">删除</a>
+											<input type="checkbox" aria-label="..."> 
+											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
+											<a href="#" class="btn btn-warning btn-sm" role="button" title="重命名"><span class="glyphicon glyphicon-edit" aria-hidden="true">重命名</a>
 										</p>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="170"
-										height="180">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p>示例文件夹</p>
+										<p style="text-align: center">奢侈品图</p>
 										<p>
-											<a href="#" class="btn btn-primary" role="button">重命名</a> <a
-												href="#" class="btn btn-default" role="button">删除</a>
+											<input type="checkbox" aria-label="..."> 
+											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
+											<a href="#" class="btn btn-warning btn-sm" role="button" title="重命名"><span class="glyphicon glyphicon-edit" aria-hidden="true">重命名</a>
 										</p>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="170"
-										height="180">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p>示例文件夹</p>
+										<p style="text-align: center">运维测试</p>
 										<p>
-											<a href="#" class="btn btn-primary" role="button">重命名</a> <a
-												href="#" class="btn btn-default" role="button">删除</a>
+											<input type="checkbox" aria-label="..."> 
+											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
+											<a href="#" class="btn btn-warning btn-sm" role="button" title="重命名"><span class="glyphicon glyphicon-edit" aria-hidden="true">重命名</a>
 										</p>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="170"
-										height="180">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p>示例文件夹</p>
+										<p style="text-align: center">商品主图</p>
 										<p>
-											<a href="#" class="btn btn-primary" role="button">重命名</a> <a
-												href="#" class="btn btn-default" role="button">删除</a>
+											<input type="checkbox" aria-label="..."> 
+											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
+											<a href="#" class="btn btn-warning btn-sm" role="button" title="重命名"><span class="glyphicon glyphicon-edit" aria-hidden="true">重命名</a>
 										</p>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="col-sm-2">
 								<div class="thumbnail">
-									<img src="${base}/static/images/folder.png" width="170"
-										height="180">
+									<img src="${base}/static/images/folder.png" width="120">
 									<div class="caption">
-										<p>示例文件夹</p>
+										<p style="text-align: center">运营大图</p>
 										<p>
-											<a href="#" class="btn btn-primary" role="button">重命名</a> <a
-												href="#" class="btn btn-default" role="button">删除</a>
+											<input type="checkbox" aria-label="..."> 
+											<a href="#" class="btn btn-danger btn-sm" role="button" title="删除"><span class="glyphicon glyphicon-trash" aria-hidden="true">删除</a> 
+											<a href="#" class="btn btn-warning btn-sm" role="button" title="重命名"><span class="glyphicon glyphicon-edit" aria-hidden="true">重命名</a>
 										</p>
 									</div>
 								</div>
@@ -150,7 +147,7 @@
 									<li><a href="#">2</a></li>
 									<li><a href="#">3</a></li>
 									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
+									<li class="active"><a href="#">5</a></li>
 									<li><a href="#" aria-label="Next"> <span
 											aria-hidden="true">&raquo;</span>
 									</a></li>
@@ -162,8 +159,8 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="${base}/static/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="${base}/static/js/folder.js"></script>
